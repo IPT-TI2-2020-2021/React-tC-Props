@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React App - Props",
+  "name": "App React com acesso a PROPS",
   "icons": [
     {
       "src": "favicon.ico",
