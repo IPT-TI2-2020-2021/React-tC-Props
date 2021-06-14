@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+// ***********************************************
+// app.js
+// ***********************************************
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import React from 'react';
+
+/**
+ * Componente 'principal' do meu projeto
+ */
+class App extends React.Component {
+
+  render() {
+    // este método É OBRIGATÓRIO
+    return (
+      <div className="container">
+        <h1>Lista de Alunos</h1>
+        <div className="row">
+          <div className="col-4">
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Apelido</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>José</td>
+                <td>Lopes</td>
+              </tr>
+              <tr>
+                <td>Maria</td>
+                <td>Silva</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    );
+
+  }
 }
+
+
+
+
+
+
+
+
+
 
 export default App;
